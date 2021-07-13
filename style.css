@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+section{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: lightgrey;
+    font-size: smaller;
+    line-height: 0.5em;
+    opacity: 0.8;
+    padding: 10px;
+}
+
+
+.brief-item {
+    display: flex;
+}
+
+.brief-item > div:first-child {
+    width: 20%;
+}
+.brief-item > div:last-child {
+    width: 80%;
+}
+
+.brief-item > div:first-child::after {
+    content: "：";
+}
+
+
+.original-content::after {
+    content: "（Original Content）";
+    font-size: smaller;
+    opacity: 0.7;
+}
+
+.translator-supplement::before {
+    content: "（譯者補充：";
+    font-size: smaller;
+}
+
+.translator-supplement {
+    font-size: smaller;
+}
+.translator-supplement::after {
+    content: "）";
+    font-size: smaller;
+}
+
+figure {
+    width: fit-content;
+}
+
+figcaption {
+    font-size: smaller;
+    opacity: 0.7;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
